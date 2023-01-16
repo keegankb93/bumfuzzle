@@ -1,10 +1,7 @@
 <script lang="ts">
 	import Canvas from '$lib/components/Canvas/Canvas.svelte';
-	let strokeWeight: number;
-
-	function changeColor() {}
+	let color: string;
 </script>
 
-<Canvas {strokeWeight} />
-<input bind:value={strokeWeight} />
-<button on:click={changeColor} />
+<Canvas {color} />
+<input bind:value={color} />
